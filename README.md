@@ -4,7 +4,7 @@ Landing page corporativa profesional para una firma de consultoría empresarial 
 
 > 🇪🇨 Proceso 100% remoto vía Zoom · Diseño ejecutivo oscuro/azul · Mobile-first · Listo para GitHub y Vercel
 
-![Next.js](https://img.shields.io/badge/Next.js-16-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4) ![Prisma](https://img.shields.io/badge/Prisma-6-2D3748) ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-New_York-8B5CF6)
+![Next.js](https://img.shields.io/badge/Next.js-16-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4) ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-New_York-8B5CF6)
 
 ---
 
@@ -33,7 +33,7 @@ Landing page corporativa profesional para una firma de consultoría empresarial 
 | Estilos | Tailwind CSS 4 + shadcn/ui (New York) + Lucide Icons |
 | Animaciones | Framer Motion |
 | Validación | Zod + React Hook Form |
-| Contacto | API de WhatsApp (`wa.me`) — sin base de datos |
+| Contacto | API de WhatsApp (`wa.me`) — sin base de datos, sin backend |
 
 ## 🚀 Puesta en marcha local
 
@@ -49,14 +49,11 @@ bun run dev        # o: npm run dev
 
 Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-> El formulario de contacto funciona sin base de datos: abre WhatsApp con la solicitud prellenada. Las carpetas `prisma/` y `db/` incluidas son una base opcional para una futura versión con guardado de leads (ver «Migrar a producción con base de datos»).
-
 ## 📦 Estructura del proyecto
 
 ```
 src/
 ├── app/
-│   ├── api/contact/route.ts     # API del formulario (validación + Prisma)
 │   ├── layout.tsx               # Metadata SEO en español
 │   ├── page.tsx                 # Landing (ensambla las secciones)
 │   └── globals.css              # Tema, scroll suave y scrollbar custom
@@ -66,8 +63,7 @@ src/
 │   │                            # modales legales, WhatsApp flotante
 │   └── ui/                      # Kit shadcn/ui completo
 ├── config/site-config.ts        # ⭐ ÚNICA fuente de datos del negocio
-├── hooks/  ·  lib/
-prisma/schema.prisma             # Modelo ContactMessage
+└── hooks/  ·  lib/
 ```
 
 ## ✏️ Personalización (importante para producción)
@@ -93,7 +89,7 @@ git remote add origin https://github.com/TU_USUARIO/servicios-corporativos-landi
 git push -u origin main
 ```
 
-> El `.gitignore` ya excluye `.env` (pero sí incluye `.env.example`), `node_modules` y `.next`.
+> El `.gitignore` ya excluye `node_modules` y `.next`. No se necesita ningún archivo `.env` ni variable de entorno.
 
 ### 2. Importar en Vercel
 
@@ -105,14 +101,6 @@ git push -u origin main
 
 El sitio muestra la infraestructura de cobro (badges Nuvei/Datafast + simulador). Para cobrar de verdad, el comercio genera un **link de pago** desde su panel de Nuvei o Datafast y lo envía por correo/WhatsApp junto con la propuesta. Opcionalmente puede publicarse un botón fijo; el simulador del footer indica exactamente dónde integrarlo.
 
-### 🔒 (Opcional) Migrar a producción con base de datos
-
-Si el cliente quisiera guardar los leads del formulario en una base de datos en lugar de recibirlos por WhatsApp:
-
-1. Crea una base gratuita en [Neon](https://neon.tech) o [Supabase](https://supabase.com).
-2. Cambia `provider = "postgresql"` en `prisma/schema.prisma`, apunta `DATABASE_URL` a tu base y ejecuta `npx prisma db push`.
-3. Recrea el endpoint `POST /api/contact` (React Hook Form + Zod ya están listos en `src/components/landing/contact-form.tsx`) y en Vercel agrega la variable `DATABASE_URL`.
-
 ## 📜 Scripts disponibles
 
 | Comando | Descripción |
@@ -120,7 +108,6 @@ Si el cliente quisiera guardar los leads del formulario en una base de datos en 
 | `bun run dev` | Servidor de desarrollo |
 | `bun run build` | Build de producción |
 | `bun run lint` | ESLint |
-| `bun run db:push` | (Opcional) Sincroniza el esquema Prisma con la BD |
 
 ---
 
