@@ -22,7 +22,7 @@ import { paymentGateways } from "@/config/site-config";
 import { cn } from "@/lib/utils";
 
 /**
- * Simulador de pago en línea (Hosted Checkout estilo Nuvei/Datafast).
+ * Simulador de pago en línea (Hosted Checkout estilo Nuvei/Datalink).
  * Es una maqueta 100% client-side con fines de demostración comercial:
  * no procesa pagos ni almacena datos de tarjetas.
  *
@@ -32,7 +32,7 @@ import { cn } from "@/lib/utils";
  * una demostración, sin cargos ni pantallas de aprobación simuladas.
  *
  * En producción, el botón "Pagar" de la empresa redirigiría al checkout
- * seguro real generado desde el panel del comercio (Nuvei o Datafast).
+ * seguro real generado desde el panel del comercio (Nuvei o Datalink).
  */
 
 const demoPlans = [

@@ -47,7 +47,7 @@ const legalDocs: Record<LegalDocumentId, LegalDoc> = {
       {
         heading: "4. Honorarios, pagos y pasarelas autorizadas",
         body: [
-          "Los honorarios son los fijados en la propuesta económica aceptada por el cliente. Los pagos se procesan exclusivamente a través de las pasarelas de pago autorizadas Nuvei y Datafast, con tarjetas de crédito o débito Visa, Mastercard, Diners Club y Discover, u otros medios expresamente habilitados.",
+          "Los honorarios son los fijados en la propuesta económica aceptada por el cliente. Los pagos se procesan exclusivamente a través de las pasarelas de pago autorizadas Nuvei y Datalink, con tarjetas de crédito o débito Visa, Mastercard, Diners Club y Discover, u otros medios expresamente habilitados.",
           "Toda transacción se procesa bajo protocolos de seguridad PCI DSS mediante formularios seguros de la pasarela. La compañía no almacena datos completos de tarjetas de crédito en sus sistemas.",
         ],
       },
@@ -88,7 +88,7 @@ const legalDocs: Record<LegalDocumentId, LegalDoc> = {
         heading: "2. Datos que recopilamos",
         body: [
           "Datos identificativos y de contacto: nombre completo, correo electrónico, número de teléfono y, cuando la prestación del servicio lo requiera, datos societarios y documentación corporativa aportada voluntariamente por el titular.",
-          "Datos de navegación: información técnica básica generada por el uso del sitio web. No recopilamos categorías especiales de datos ni datos financieros completos de tarjetas; los pagos se procesan directamente en las pasarelas certificadas Nuvei y Datafast.",
+          "Datos de navegación: información técnica básica generada por el uso del sitio web. No recopilamos categorías especiales de datos ni datos financieros completos de tarjetas; los pagos se procesan directamente en las pasarelas certificadas Nuvei y Datalink.",
         ],
       },
       {
@@ -155,7 +155,7 @@ const legalDocs: Record<LegalDocumentId, LegalDoc> = {
         heading: "4. Procedimiento de solicitud",
         body: [
           "Las solicitudes de reembolso o cancelación deben dirigirse por escrito a nuestro correo de contacto, indicando nombre, datos de la contratación y motivo. El plazo máximo de respuesta es de cinco (5) días hábiles.",
-          "Una vez aprobado el reembolso, este se procesará a través de la misma pasarela de pago utilizada en la transacción original (Nuvei o Datafast), abonándose a la misma tarjeta con la que se efectuó el pago.",
+          "Una vez aprobado el reembolso, este se procesará a través de la misma pasarela de pago utilizada en la transacción original (Nuvei o Datalink), abonándose a la misma tarjeta con la que se efectuó el pago.",
         ],
       },
       {

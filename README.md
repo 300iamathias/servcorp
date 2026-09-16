@@ -18,8 +18,8 @@ Landing page corporativa profesional para una firma de consultoría empresarial 
 - **FAQ** con acordeón animado
 - **Formulario de contacto conectado a WhatsApp** (validado en cliente): al enviarse, abre WhatsApp con la solicitud estructurada y prellenada — sin base de datos ni backend
 - **Mapa de ubicación** (Google Maps embebido, sin API key) con botón «Cómo llegar» en la sección de contacto
-- **Simulador de pago en línea** (checkout demo estilo Nuvei/Datafast) para mostrar el flujo de cobro al cliente final
-- **Footer compliant** para pasarelas de pago (Nuvei/Datafast): RUC, razón social, dirección, teléfono, correo, badges Visa/Mastercard/Diners/Discover
+- **Simulador de pago en línea** (checkout demo estilo Nuvei/Datalink) para mostrar el flujo de cobro al cliente final
+- **Footer compliant** para pasarelas de pago (Nuvei/Datalink): RUC, razón social, dirección, teléfono, correo, badges Visa/Mastercard/Diners/Discover
 - **Modales legales**: Términos y Condiciones (LOEI), Política de Privacidad (LOPDP) y Política de Reembolso (LODC)
 - **Franja «Modo Vista Previa»** desactivable con una línea (ideal para presentar la maqueta al cliente)
 - **Botón flotante de WhatsApp** siempre visible
@@ -100,7 +100,7 @@ git push -u origin main
 
 ### 💳 Cómo funcionan los pagos en producción
 
-El sitio muestra la infraestructura de cobro (badges Nuvei/Datafast + simulador). Para cobrar de verdad, el comercio genera un **link de pago** desde su panel de Nuvei o Datafast y lo envía por correo/WhatsApp junto con la propuesta. Opcionalmente puede publicarse un botón fijo; el simulador del footer indica exactamente dónde integrarlo.
+El sitio muestra la infraestructura de cobro (badges Nuvei/Datalink + simulador). Para cobrar de verdad, el comercio genera un **link de pago** desde su panel de Nuvei o Datalink y lo envía por correo/WhatsApp junto con la propuesta. Opcionalmente puede publicarse un botón fijo; el simulador del footer indica exactamente dónde integrarlo.
 
 ## 📜 Scripts disponibles
 

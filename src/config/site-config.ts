@@ -67,7 +67,7 @@ export const serviceOptions = [
 ] as const;
 
 /** Pasarelas de pago autorizadas y tarjetas aceptadas (footer compliant). */
-export const paymentGateways = ["Nuvei", "Datafast"] as const;
+export const paymentGateways = ["Nuvei", "Datalink"] as const;
 
 /**
  * Franja superior de "Modo Vista Previa".
@@ -172,7 +172,7 @@ export const faqs = [
   {
     question: "¿Qué formas de pago aceptan?",
     answer:
-      "Aceptamos tarjetas de crédito y débito Visa, Mastercard, Diners Club y Discover, procesadas de forma segura a través de las pasarelas de pago Nuvei y Datafast, además de transferencias bancarias para planes corporativos.",
+      "Aceptamos tarjetas de crédito y débito Visa, Mastercard, Diners Club y Discover, procesadas de forma segura a través de las pasarelas de pago Nuvei y Datalink, además de transferencias bancarias para planes corporativos.",
   },
   {
     question: "¿Trabajan con clientes en todo el Ecuador?",
