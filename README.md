@@ -17,6 +17,7 @@ Landing page corporativa profesional para una firma de consultoría empresarial 
 - **Testimonios** de clientes con calificación 5 estrellas
 - **FAQ** con acordeón animado
 - **Formulario de contacto conectado a WhatsApp** (validado en cliente): al enviarse, abre WhatsApp con la solicitud estructurada y prellenada — sin base de datos ni backend
+- **Mapa de ubicación** (Google Maps embebido, sin API key) con botón «Cómo llegar» en la sección de contacto
 - **Simulador de pago en línea** (checkout demo estilo Nuvei/Datafast) para mostrar el flujo de cobro al cliente final
 - **Footer compliant** para pasarelas de pago (Nuvei/Datafast): RUC, razón social, dirección, teléfono, correo, badges Visa/Mastercard/Diners/Discover
 - **Modales legales**: Términos y Condiciones (LOEI), Política de Privacidad (LOPDP) y Política de Reembolso (LODC)

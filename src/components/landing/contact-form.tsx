@@ -27,6 +27,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { company, serviceOptions, whatsappUrl } from "@/config/site-config";
+import { LocationMap } from "@/components/landing/location-map";
 import { cn } from "@/lib/utils";
 
 const formSchema = z.object({
@@ -510,6 +511,9 @@ export function ContactSection() {
             </div>
           </motion.div>
         </div>
+
+        {/* Mapa de ubicación */}
+        <LocationMap />
       </div>
     </section>
   );

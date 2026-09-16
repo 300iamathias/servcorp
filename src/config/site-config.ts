@@ -28,6 +28,18 @@ export const whatsappUrl = `https://wa.me/${company.whatsappNumber}?text=${encod
   "Hola, deseo información sobre los servicios de constitución de compañías SAS y asesoría legal/financiera."
 )}`;
 
+/**
+ * Mapa de ubicación (Google Maps, sin API key).
+ * Al cambiar la dirección real de la empresa, actualiza también estas dos URLs.
+ */
+export const mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(
+  "Edificio Metrópolis, Av. República de El Salvador N36-64, Quito, Ecuador"
+)}&z=16&output=embed`;
+
+export const mapDirectionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
+  "Edificio Metrópolis, Av. República de El Salvador N36-64, Quito, Ecuador"
+)}`;
+
 export const navLinks = [
   { label: "Inicio", href: "#inicio" },
   { label: "Servicios", href: "#servicios" },
